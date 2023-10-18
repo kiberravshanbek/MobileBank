@@ -33,6 +33,9 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
+    buildFeatures{
+        viewBinding=true
+    }
 }
 
 dependencies {
@@ -52,6 +55,7 @@ dependencies {
     val fragment_version = "1.6.1"
 
 
-  
+    implementation ("com.github.kirich1409:viewbindingpropertydelegate-full:1.5.9")
+
     implementation("androidx.fragment:fragment-ktx:$fragment_version")
 }
